@@ -4,7 +4,6 @@ const app = express();
 
 app.use(express.json());
 
-require('./controllers/authController')(app);
-require('./controllers/projectController')(app);
+require('./app/controllers')(app);
 
 app.listen(3000);
